@@ -12,6 +12,7 @@ body {
     padding: .5rem 1.25rem;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     cursor: pointer;
+    margin-bottom: 2em;
 }
 #search:hover {
     border: 1px solid transparent;
@@ -40,13 +41,15 @@ input {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
-    margin-top: 1rem;
+    margin: 0 auto;
+    max-width: 1150px;
 }
 .card {
     font-family: 'Shadows Into Light', cursive;
     background-color: white;
     padding: .5rem;
     box-shadow: rgba(240, 64, 196, 0.15) 0px 2px 8px;
+    
 }
 .card:hover {
     background-color: aliceblue;
@@ -71,7 +74,7 @@ input {
         margin:0 80px;
     }
     .search-wrapper {
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
     .card {
         text-align: center;
