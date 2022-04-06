@@ -23,10 +23,11 @@ fetch("https://jsonplaceholder.typicode.com/users")
             const card = userCardTemplate.content.cloneNode(true).children[0]
             const header = card.querySelector("[data-header]")
             const body = card.querySelector("[data-body]")
-            header.textContent = user.name
+            header.textContent = user.username
             body.textContent = user.email
+            // body.textContent = user.name
             userCardContainer.append(card)   
-            return {name: user.name, email: user.email, element: card}  
+            return {name: user.name, email: user.email, address: user.address, element: card}  
         })
     })
 
